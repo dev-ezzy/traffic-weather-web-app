@@ -1,0 +1,76 @@
+/* Video background */
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Body styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Content container styles */
+.prediction-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  max-width: 500px;
+  margin: 4rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Other styles unchanged */
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.prediction-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.prediction-form input,
+.prediction-form select,
+.prediction-form button {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.prediction-form button {
+  background-color: #007BFF;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.prediction-form button:hover {
+  background-color: #0056b3;
+}
+
+.result-box {
+  margin-top: 2rem;
+  background: #f1f1f1;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.result-item {
+  margin-bottom: 0.5rem;
+}
